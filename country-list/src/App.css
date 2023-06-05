@@ -1,0 +1,163 @@
+* {
+  padding: unset;
+  margin: 0;
+  /* used to create space around elements, outside of any defined borders */
+}
+
+.padding-7 {
+  padding: 7px;
+  /* used to create space around an element's content, inside of any defined borders */
+}
+
+body {
+  display: flex;
+  /* FLEX = ЗГИНАТИ */
+  /* the element becomes a flex container, and its child elements become flex items */
+  /* POSSIBLE PROPERTIES:
+  block;
+  inline;
+  inline-block;
+  none;
+  table;
+  grid. */
+  justify-content: center;
+  /* to horizontally align flex items within a flex container along the main axis */
+  /* AXIS = ВІСЬ */
+  /* POSSIBLE PROPERTIES:
+  flex-start;
+  flex-end;
+  space-between;
+  space-around;
+  space-evenly. */
+  align-items: center;
+  /* POSSIBLE PROPERTIES:
+  flex-start;
+  flex-end;
+  baseline;
+  stretch. */
+  /* These properties can be used in 
+  conjunction = з'єднання 
+  with the display: flex; 
+  or display: inline-flex; property set on the flex container 
+  to control the vertical 
+  alignment = вирівнювання 
+  of the flex 
+  items = елементи
+  within = у межах 
+  the container. */
+  flex-direction: column;
+  /* POSSIBLE PROPERTIES:
+  row;
+  row-reverse;
+  column;
+  column-reverse. */
+}
+
+.blockParent {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block {
+  width: 50%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  /* POSSIBLE PROPERTIES:
+  space-evenly;
+  space-around;
+  flex-start;
+  baseline = основна лінія;
+  flex-end. */
+  align-items: center;
+  padding: 7px;
+  margin-bottom: 7px;
+  background: rgb(150, 117, 206);
+  border-radius: 19px;
+}
+
+.blockList {
+  width: 70%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+  background: rgb(150, 117, 206);
+  border-radius: 19px;
+}
+
+.textApp {
+  color: rgb(248, 248, 248);
+}
+
+.photoMain {
+  width: 50%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background: rgb(150, 117, 206);
+  border-radius: 19px;
+}
+
+.photoMainSize {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+}
+
+.photoUser {
+  width: 6%;
+  height: 80%;
+  display: flex;
+  justify-content: right;
+  border-radius: 100%;
+}
+
+.buttonApp {
+  width: 10%;
+  height: 80%;
+  cursor: pointer;
+  /*POSSIBLE PROPERTIES:
+  auto;
+  default;
+  none;
+  context-menu;
+  grab;
+  move;
+  text;
+  wait;
+  crosshair = перехрестя;
+  help. */
+  margin-right: 2px;
+  background: rgb(150, 117, 206);
+  border-radius: 19%;
+}
+
+.buttonBack {
+  position: fixed;
+  top: 19px;
+  right: 19px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background: transparent;
+  border-radius: 19px;
+}
+
+.buttonActive {
+  background: rgb(41, 41, 41) !important;
+}
+
+.buttonSpace {
+  margin-left: 7px;
+}
+
+.hide {
+  display: none !important;
+  /* !important will OVERRIDE = ЗАМІНИТИ ALL previous styling rules for that specific property on that element. */
+}
